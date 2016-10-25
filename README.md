@@ -1,5 +1,5 @@
 # Simple File Properties
-A helper dialog for displaying file properties based on its type.
+A helper dialog for displaying file properties based on their type.
 
 License
 -------
