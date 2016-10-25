@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1b0cf9a9fa2615a5e471c52c3e56d36ffae66cbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_cea54e10ad1d88701d6495559731883551e26255/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_0216080851f5adf7e0ca0bcfbfa04a076867b61c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f9f841c2634c8a38fab29fbd98cbf2baebbca472/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7879c41ac5f8daa26278e493c0065ec181a0e35a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_d348e97d307344885df66e1a159a127bdab92bb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_869a417a84067029951279efbb05f19ad8afd7a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_11ca54beba38f377f5c09e187fd4662046e9d46c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_13977a75167fb8354e4f7dca135ee12d49ac7982/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_9b3d8b02daff1648f09ebf2c2ba2e7d9f249b23d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="103fb845225f3a9dc4ac0f9101ae61a0131edb38">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3da84843014b4e21e146912aedfb7fe7301bfb09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_e18ca8a42c42b9bc1c4af8572bfd7f036cedd66f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_36b4dda8f96a98514229017090c34d5183b18879/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_8a5455e22494d348ca3ffacfaa7443e30b699ccc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_2d85b50dfbf943fea179b4b0dcbd9d187bc8cfd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_8d58bbbe5d8c496cf35bda8e3fc9a2e33ca92936/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="77ed347256105527742967fd1a750960c6a1a649">
+        <dex dex="/home/tibbi/Android/AndroidStudioProjects/simplemobiletools/Simple-File-Properties/samples/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bc3e6857744b75c615cdda7858ded7bf00573039/classes.dex" />
+    </item>
+
+</items>
