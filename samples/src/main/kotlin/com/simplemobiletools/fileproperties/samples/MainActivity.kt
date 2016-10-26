@@ -7,6 +7,7 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import com.simplemobiletools.filepicker.dialogs.FilePickerDialog
+import com.simplemobiletools.fileproperties.dialogs.PropertiesDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onSuccess(path: String) {
-
+                PropertiesDialog(this@MainActivity, path)
             }
         })
     }
