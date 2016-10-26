@@ -20,6 +20,13 @@ class PropertiesDialog() {
     private var mCountHiddenItems = false
     private var mFilesCnt = 0
 
+    /**
+     * A File Properties dialog constructor with an optional parameter, usable at 1 file selected
+     *
+     * @param context activity context
+     * @param path the file path
+     * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes (reasonable only at directory properties)
+     */
     constructor(context: Context, path: String, countHiddenItems: Boolean = false) : this() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
@@ -55,6 +62,13 @@ class PropertiesDialog() {
                 .show()
     }
 
+    /**
+     * A File Properties dialog constructor with an optional parameter, usable at multiple items selected
+     *
+     * @param context activity context
+     * @param path the file path
+     * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes
+     */
     constructor(context: Context, paths: List<String>, countHiddenItems: Boolean = false) : this() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
