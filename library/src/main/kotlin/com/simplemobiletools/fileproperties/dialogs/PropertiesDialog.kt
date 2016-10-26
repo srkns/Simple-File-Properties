@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.simplemobiletools.fileproperties.R
 import com.simplemobiletools.fileproperties.extensions.*
-import kotlinx.android.synthetic.main.item_properties.view.*
-import kotlinx.android.synthetic.main.property_item.view.*
+import kotlinx.android.synthetic.main.smtpr_item_properties.view.*
+import kotlinx.android.synthetic.main.smtpr_property_item.view.*
 import java.io.File
 import java.util.*
 
@@ -24,33 +24,33 @@ class PropertiesDialog() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
         mResources = context.resources
-        mPropertyView = mInflater.inflate(R.layout.item_properties, null) as ViewGroup
+        mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
 
         val file = File(path)
-        addProperty(R.string.name, file.name)
-        addProperty(R.string.path, file.parent)
-        addProperty(R.string.size, getItemSize(file).formatSize())
-        addProperty(R.string.last_modified, file.lastModified().formatLastModified())
+        addProperty(R.string.smtpr_name, file.name)
+        addProperty(R.string.smtpr_path, file.parent)
+        addProperty(R.string.smtpr_size, getItemSize(file).formatSize())
+        addProperty(R.string.smtpr_last_modified, file.lastModified().formatLastModified())
 
         if (file.isDirectory) {
-            addProperty(R.string.files_count, mFilesCnt.toString())
+            addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
         } else if (file.isImage()) {
-            addProperty(R.string.resolution, file.getImageResolution())
+            addProperty(R.string.smtpr_resolution, file.getImageResolution())
         } else if (file.isAudio()) {
-            addProperty(R.string.duration, file.getDuration())
-            addProperty(R.string.artist, file.getArtist())
-            addProperty(R.string.album, file.getAlbum())
+            addProperty(R.string.smtpr_duration, file.getDuration())
+            addProperty(R.string.smtpr_artist, file.getArtist())
+            addProperty(R.string.smtpr_album, file.getAlbum())
         } else if (file.isVideo()) {
-            addProperty(R.string.duration, file.getDuration())
-            addProperty(R.string.resolution, file.getVideoResolution())
-            addProperty(R.string.artist, file.getArtist())
-            addProperty(R.string.album, file.getAlbum())
+            addProperty(R.string.smtpr_duration, file.getDuration())
+            addProperty(R.string.smtpr_resolution, file.getVideoResolution())
+            addProperty(R.string.smtpr_artist, file.getArtist())
+            addProperty(R.string.smtpr_album, file.getAlbum())
         }
 
         AlertDialog.Builder(context)
-                .setTitle(mResources.getString(R.string.properties))
+                .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(mPropertyView)
-                .setPositiveButton(R.string.ok, null)
+                .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
                 .show()
     }
@@ -59,19 +59,19 @@ class PropertiesDialog() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
         mResources = context.resources
-        mPropertyView = mInflater.inflate(R.layout.item_properties, null) as ViewGroup
+        mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
 
         val files = ArrayList<File>(paths.size)
         paths.forEach { files.add(File(it)) }
 
-        addProperty(R.string.path, files[0].parent)
-        addProperty(R.string.size, getItemsSize(files).formatSize())
-        addProperty(R.string.files_count, mFilesCnt.toString())
+        addProperty(R.string.smtpr_path, files[0].parent)
+        addProperty(R.string.smtpr_size, getItemsSize(files).formatSize())
+        addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
 
         AlertDialog.Builder(context)
-                .setTitle(mResources.getString(R.string.properties))
+                .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(mPropertyView)
-                .setPositiveButton(R.string.ok, null)
+                .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
                 .show()
     }
@@ -80,7 +80,7 @@ class PropertiesDialog() {
         if (value == null)
             return
 
-        val view = mInflater.inflate(R.layout.property_item, mPropertyView, false)
+        val view = mInflater.inflate(R.layout.smtpr_property_item, mPropertyView, false)
         view.property_label.text = mResources.getString(labelId)
         view.property_value.text = value
         mPropertyView.properties_holder.addView(view)

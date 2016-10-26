@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_margin"
-    android:paddingRight="@dimen/activity_margin"/>
+    android:paddingLeft="@dimen/smtpr_activity_margin"
+    android:paddingRight="@dimen/smtpr_activity_margin"/>
