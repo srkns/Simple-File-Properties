@@ -51,9 +51,9 @@ fun File.getVideoResolution(): String {
     try {
         val retriever = MediaMetadataRetriever()
         retriever.setDataSource(path)
-        val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH)
-        val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT)
-        return "$width x $height"
+        val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH).toInt()
+        val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT).toInt()
+        return "$width x $height ${getMPx(width, height)}"
     } catch (ignored: Exception) {
 
     }
@@ -64,8 +64,17 @@ fun File.getImageResolution(): String {
     val bitmap: Bitmap? = BitmapFactory.decodeFile(path)
     return if (bitmap == null)
         ""
-    else
-        "${bitmap.width} x ${bitmap.height}"
+    else {
+        val width = bitmap.width
+        val height = bitmap.height
+        "$width x $height ${getMPx(width, height)}"
+    }
+}
+
+fun getMPx(width: Int, height: Int): String {
+    val px = width * height / 1000000.toFloat()
+    val rounded = Math.round(px * 10) / 10.toFloat()
+    return "(${rounded}MP)"
 }
 
 private fun getFormattedDuration(duration: Int): String {
