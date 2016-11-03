@@ -40,6 +40,7 @@ class PropertiesDialog() {
         addProperty(R.string.smtpr_last_modified, file.lastModified().formatLastModified())
 
         if (file.isDirectory) {
+            addProperty(R.string.smtpr_direct_children_count, getDirectChildrenCount(file, countHiddenItems))
             addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
         } else if (file.isImage()) {
             addProperty(R.string.smtpr_resolution, file.getImageResolution())
@@ -88,6 +89,10 @@ class PropertiesDialog() {
                 .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
                 .show()
+    }
+
+    private fun getDirectChildrenCount(file: File, countHiddenItems: Boolean): String {
+        return file.listFiles().filter { !it.isHidden || (it.isHidden && countHiddenItems) }.size.toString()
     }
 
     private fun addProperty(labelId: Int, value: String?) {

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showFilePicker() {
-        FilePickerDialog(this, listener = object : FilePickerDialog.OnFilePickerListener {
+        FilePickerDialog(this, mustBeWritable = false, listener = object : FilePickerDialog.OnFilePickerListener {
             override fun onFail(error: FilePickerDialog.FilePickerResult) {
 
             }
