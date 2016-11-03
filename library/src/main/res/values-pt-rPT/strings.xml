@@ -7,6 +7,7 @@
     <string name="smtpr_name">Nome</string>
     <string name="smtpr_path">Caminho</string>
     <string name="smtpr_size">Tamanho</string>
+    <string name="smtpr_items_selected">Items selected</string>
     <string name="smtpr_last_modified">Última modificação</string>
     <string name="smtpr_direct_children_count">Direct children count</string>
     <string name="smtpr_files_count">Total files count</string>

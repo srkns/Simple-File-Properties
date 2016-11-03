@@ -79,6 +79,7 @@ class PropertiesDialog() {
         val files = ArrayList<File>(paths.size)
         paths.forEach { files.add(File(it)) }
 
+        addProperty(R.string.smtpr_items_selected, paths.size.toString())
         addProperty(R.string.smtpr_path, files[0].parent)
         addProperty(R.string.smtpr_size, getItemsSize(files).formatSize())
         addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
