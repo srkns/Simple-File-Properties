@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simplemobiletools</groupId>
     <artifactId>fileproperties</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
     <name>Fileproperties</name>
     <description>A helper dialog for displaying file properties based on their type.</description>
@@ -33,7 +33,7 @@
       <dependency>
         <groupId>com.simplemobiletools</groupId>
         <artifactId>filepicker</artifactId>
-        <version>1.3.6</version>
+        <version>1.3.19</version>
       </dependency>
       <dependency>
         <groupId>com.github.bumptech.glide</groupId>
