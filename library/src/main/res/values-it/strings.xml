@@ -7,12 +7,12 @@
     <string name="smtpr_name">Nome</string>
     <string name="smtpr_path">Percorso</string>
     <string name="smtpr_size">Dimensione</string>
-    <string name="smtpr_items_selected">Items selected</string>
+    <string name="smtpr_items_selected">Elementi selezionati</string>
     <string name="smtpr_last_modified">Ultima modifica</string>
-    <string name="smtpr_direct_children_count">Direct children count</string>
-    <string name="smtpr_files_count">Total files count</string>
-    <string name="smtpr_resolution">Resolution</string>
-    <string name="smtpr_duration">Duration</string>
-    <string name="smtpr_artist">Artist</string>
+    <string name="smtpr_direct_children_count">File direttamente contenuti</string>
+    <string name="smtpr_files_count">Numero totale file</string>
+    <string name="smtpr_resolution">Risoluzione</string>
+    <string name="smtpr_duration">Durata</string>
+    <string name="smtpr_artist">Artista</string>
     <string name="smtpr_album">Album</string>
 </resources>
