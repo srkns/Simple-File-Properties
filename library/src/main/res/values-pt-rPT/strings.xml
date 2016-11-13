@@ -9,7 +9,7 @@
     <string name="smtpr_size">Tamanho</string>
     <string name="smtpr_items_selected">Itens selecionados</string>
     <string name="smtpr_last_modified">Última modificação</string>
-    <string name="smtpr_direct_children_count">Contagem direta</string>
+    <string name="smtpr_direct_children_count">Itens nesta pasta</string>
     <string name="smtpr_files_count">Total de ficheiros</string>
     <string name="smtpr_resolution">Resolução</string>
     <string name="smtpr_duration">Duração</string>
