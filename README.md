@@ -1,6 +1,8 @@
 # Simple File Properties
 A helper dialog for displaying file properties based on their type.
 
+[ ![Download](https://api.bintray.com/packages/simplelibraries/fileproperties/fileproperties/images/download.svg) ](https://bintray.com/simplelibraries/fileproperties/fileproperties/_latestVersion)
+
 License
 -------
     Copyright 2016 SimpleMobileTools
