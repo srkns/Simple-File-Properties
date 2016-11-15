@@ -1,6 +1,5 @@
 package com.simplemobiletools.fileproperties.extensions
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.media.MediaMetadataRetriever
 import java.io.File
@@ -61,14 +60,12 @@ fun File.getVideoResolution(): String {
 }
 
 fun File.getImageResolution(): String {
-    val bitmap: Bitmap? = BitmapFactory.decodeFile(path)
-    return if (bitmap == null)
-        ""
-    else {
-        val width = bitmap.width
-        val height = bitmap.height
-        "$width x $height ${getMPx(width, height)}"
-    }
+    val options = BitmapFactory.Options()
+    options.inJustDecodeBounds = true
+    BitmapFactory.decodeFile(path, options)
+    val width = options.outWidth
+    val height = options.outHeight
+    return "$width x $height ${getMPx(width, height)}"
 }
 
 fun getMPx(width: Int, height: Int): String {
