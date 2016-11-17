@@ -1,6 +1,6 @@
 package com.simplemobiletools.fileproperties.dialogs
 
-import android.app.Activity
+import android.content.Context
 import android.content.res.Resources
 import android.support.v7.app.AlertDialog
 import android.view.LayoutInflater
@@ -23,14 +23,14 @@ class PropertiesDialog() {
     /**
      * A File Properties dialog constructor with an optional parameter, usable at 1 file selected
      *
-     * @param activity use the activity instead of any context to avoid some Theme.AppCompat issues
+     * @param context: has to be activity context to avoid some Theme.AppCompat issues
      * @param path the file path
      * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes (reasonable only at directory properties)
      */
-    constructor(activity: Activity, path: String, countHiddenItems: Boolean = false) : this() {
+    constructor(context: Context, path: String, countHiddenItems: Boolean = false) : this() {
         mCountHiddenItems = countHiddenItems
-        mInflater = LayoutInflater.from(activity)
-        mResources = activity.resources
+        mInflater = LayoutInflater.from(context)
+        mResources = context.resources
         mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
 
         val file = File(path)
@@ -55,7 +55,7 @@ class PropertiesDialog() {
             addProperty(R.string.smtpr_album, file.getAlbum())
         }
 
-        AlertDialog.Builder(activity)
+        AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(mPropertyView)
                 .setPositiveButton(R.string.smtpr_ok, null)
@@ -66,14 +66,14 @@ class PropertiesDialog() {
     /**
      * A File Properties dialog constructor with an optional parameter, usable at multiple items selected
      *
-     * @param activity use the activity instead of any context to avoid some Theme.AppCompat issues
+     * @param context: has to be activity context to avoid some Theme.AppCompat issues
      * @param path the file path
      * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes
      */
-    constructor(activity: Activity, paths: List<String>, countHiddenItems: Boolean = false) : this() {
+    constructor(context: Context, paths: List<String>, countHiddenItems: Boolean = false) : this() {
         mCountHiddenItems = countHiddenItems
-        mInflater = LayoutInflater.from(activity)
-        mResources = activity.resources
+        mInflater = LayoutInflater.from(context)
+        mResources = context.resources
         mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
 
         val files = ArrayList<File>(paths.size)
@@ -87,7 +87,7 @@ class PropertiesDialog() {
         addProperty(R.string.smtpr_size, getItemsSize(files).formatSize())
         addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
 
-        AlertDialog.Builder(activity)
+        AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(mPropertyView)
                 .setPositiveButton(R.string.smtpr_ok, null)
