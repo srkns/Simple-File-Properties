@@ -4,9 +4,9 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
-import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import com.simplemobiletools.filepicker.dialogs.FilePickerDialog
+import com.simplemobiletools.filepicker.extensions.hasStoragePermission
 import com.simplemobiletools.fileproperties.dialogs.PropertiesDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -38,11 +38,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun requestStoragePermission() = ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), STORAGE_PERMISSION)
-    private fun hasStoragePermission() = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == STORAGE_PERMISSION && grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        if (requestCode == STORAGE_PERMISSION && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             showFilePicker()
         }
     }
