@@ -1,8 +1,8 @@
 package com.simplemobiletools.fileproperties.dialogs
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.res.Resources
-import android.support.v7.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.simplemobiletools.fileproperties.R
@@ -23,7 +23,7 @@ class PropertiesDialog() {
     /**
      * A File Properties dialog constructor with an optional parameter, usable at 1 file selected
      *
-     * @param context: has to be activity context to avoid some Theme.AppCompat issues
+     * @param context has to be activity context to avoid some Theme.AppCompat issues
      * @param path the file path
      * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes (reasonable only at directory properties)
      */
@@ -66,7 +66,7 @@ class PropertiesDialog() {
     /**
      * A File Properties dialog constructor with an optional parameter, usable at multiple items selected
      *
-     * @param context: has to be activity context to avoid some Theme.AppCompat issues
+     * @param context has to be activity context to avoid some Theme.AppCompat issues
      * @param path the file path
      * @param countHiddenItems toggle determining if we will count hidden files themselves and their sizes
      */
