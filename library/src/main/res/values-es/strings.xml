@@ -1,0 +1,18 @@
+<resources>
+    <string name="smtpr_ok">OK</string>
+    <string name="smtpr_cancel">Cancelar</string>
+
+    <!-- File and directory properties -->
+    <string name="smtpr_properties">Propiedades</string>
+    <string name="smtpr_name">Nombre</string>
+    <string name="smtpr_path">Ubicación</string>
+    <string name="smtpr_size">Tamaño</string>
+    <string name="smtpr_items_selected">Elementos seleccionados</string>
+    <string name="smtpr_last_modified">Última modificación</string>
+    <string name="smtpr_direct_children_count">Número de archivos directamente contenidos</string>
+    <string name="smtpr_files_count">Número total de archivos</string>
+    <string name="smtpr_resolution">Resolución</string>
+    <string name="smtpr_duration">Duración</string>
+    <string name="smtpr_artist">Artista</string>
+    <string name="smtpr_album">Álbum</string>
+</resources>
