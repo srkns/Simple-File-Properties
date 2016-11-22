@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/properties_holder"
+    android:id="@+id/smtpr_properties_scrollview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/smtpr_activity_margin"
-    android:paddingRight="@dimen/smtpr_activity_margin"/>
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/smtpr_properties_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/smtpr_activity_margin"
+        android:paddingRight="@dimen/smtpr_activity_margin"/>
+</ScrollView>

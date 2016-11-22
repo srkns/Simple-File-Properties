@@ -5,6 +5,9 @@ import android.content.Context
 import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.simplemobiletools.filepicker.extensions.isAudioSlow
+import com.simplemobiletools.filepicker.extensions.isImageSlow
+import com.simplemobiletools.filepicker.extensions.isVideoSlow
 import com.simplemobiletools.fileproperties.R
 import com.simplemobiletools.fileproperties.extensions.*
 import kotlinx.android.synthetic.main.smtpr_item_properties.view.*
@@ -31,7 +34,8 @@ class PropertiesDialog() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
         mResources = context.resources
-        mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
+        val view = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
+        mPropertyView = view.smtpr_properties_holder
 
         val file = File(path)
         addProperty(R.string.smtpr_name, file.name)
@@ -42,13 +46,13 @@ class PropertiesDialog() {
         if (file.isDirectory) {
             addProperty(R.string.smtpr_direct_children_count, getDirectChildrenCount(file, countHiddenItems))
             addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
-        } else if (file.isImage()) {
+        } else if (file.isImageSlow()) {
             addProperty(R.string.smtpr_resolution, file.getImageResolution())
-        } else if (file.isAudio()) {
+        } else if (file.isAudioSlow()) {
             addProperty(R.string.smtpr_duration, file.getDuration())
             addProperty(R.string.smtpr_artist, file.getArtist())
             addProperty(R.string.smtpr_album, file.getAlbum())
-        } else if (file.isVideo()) {
+        } else if (file.isVideoSlow()) {
             addProperty(R.string.smtpr_duration, file.getDuration())
             addProperty(R.string.smtpr_resolution, file.getVideoResolution())
             addProperty(R.string.smtpr_artist, file.getArtist())
@@ -57,7 +61,7 @@ class PropertiesDialog() {
 
         AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
-                .setView(mPropertyView)
+                .setView(view)
                 .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
                 .show()
@@ -74,7 +78,8 @@ class PropertiesDialog() {
         mCountHiddenItems = countHiddenItems
         mInflater = LayoutInflater.from(context)
         mResources = context.resources
-        mPropertyView = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
+        val view = mInflater.inflate(R.layout.smtpr_item_properties, null) as ViewGroup
+        mPropertyView = view.smtpr_properties_holder
 
         val files = ArrayList<File>(paths.size)
         paths.forEach { files.add(File(it)) }
@@ -89,7 +94,7 @@ class PropertiesDialog() {
 
         AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
-                .setView(mPropertyView)
+                .setView(view)
                 .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
                 .show()
@@ -118,7 +123,7 @@ class PropertiesDialog() {
         val view = mInflater.inflate(R.layout.smtpr_property_item, mPropertyView, false)
         view.property_label.text = mResources.getString(labelId)
         view.property_value.text = value
-        mPropertyView.properties_holder.addView(view)
+        mPropertyView.smtpr_properties_holder.addView(view)
     }
 
     private fun getItemsSize(files: ArrayList<File>): Long {

@@ -5,27 +5,6 @@ import android.media.MediaMetadataRetriever
 import java.io.File
 import java.util.*
 
-fun File.isVideo() = getMimeType().startsWith("video")
-fun File.isAudio() = getMimeType().startsWith("audio")
-
-fun File.isImage(): Boolean {
-    val options = BitmapFactory.Options()
-    options.inJustDecodeBounds = true
-    BitmapFactory.decodeFile(path, options)
-    return options.outWidth != -1 && options.outHeight != -1
-}
-
-fun File.getMimeType(): String {
-    try {
-        val retriever = MediaMetadataRetriever()
-        retriever.setDataSource(path)
-        return retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_MIMETYPE)
-    } catch (ignored: Exception) {
-
-    }
-    return ""
-}
-
 fun File.getDuration(): String {
     val retriever = MediaMetadataRetriever()
     retriever.setDataSource(path)
