@@ -59,12 +59,14 @@ class PropertiesDialog() {
             addProperty(R.string.smtpr_album, file.getAlbum())
         }
 
-        AlertDialog.Builder(context)
+        val dialog = AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(view)
                 .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
-                .show()
+
+        dialog.setCanceledOnTouchOutside(true)
+        dialog.show()
     }
 
     /**
@@ -92,12 +94,14 @@ class PropertiesDialog() {
         addProperty(R.string.smtpr_size, getItemsSize(files).formatSize())
         addProperty(R.string.smtpr_files_count, mFilesCnt.toString())
 
-        AlertDialog.Builder(context)
+        val dialog = AlertDialog.Builder(context)
                 .setTitle(mResources.getString(R.string.smtpr_properties))
                 .setView(view)
                 .setPositiveButton(R.string.smtpr_ok, null)
                 .create()
-                .show()
+
+        dialog.setCanceledOnTouchOutside(true)
+        dialog.show()
     }
 
     private fun isSameParent(files: List<File>): Boolean {
