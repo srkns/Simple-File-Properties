@@ -124,10 +124,11 @@ class PropertiesDialog() {
         if (value == null)
             return
 
-        val view = mInflater.inflate(R.layout.smtpr_property_item, mPropertyView, false)
-        view.property_label.text = mResources.getString(labelId)
-        view.property_value.text = value
-        mPropertyView.smtpr_properties_holder.addView(view)
+        mInflater.inflate(R.layout.smtpr_property_item, mPropertyView, false).apply {
+            property_label.text = mResources.getString(labelId)
+            property_value.text = value
+            mPropertyView.smtpr_properties_holder.addView(this)
+        }
     }
 
     private fun getItemsSize(files: ArrayList<File>): Long {
