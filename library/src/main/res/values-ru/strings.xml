@@ -1,0 +1,18 @@
+<resources>
+    <string name="smtpr_ok">OK</string>
+    <string name="smtpr_cancel">Отмена</string>
+
+    <!-- File and directory properties -->
+    <string name="smtpr_properties">Свойства</string>
+    <string name="smtpr_name">Имя</string>
+    <string name="smtpr_path">Расположение</string>
+    <string name="smtpr_size">Размер</string>
+    <string name="smtpr_items_selected">Выбрано элементов</string>
+    <string name="smtpr_last_modified">Последние изменения</string>
+    <string name="smtpr_direct_children_count">Дочерних элементов</string>
+    <string name="smtpr_files_count">Всего файлов внутри</string>
+    <string name="smtpr_resolution">Разрешение</string>
+    <string name="smtpr_duration">Длительность</string>
+    <string name="smtpr_artist">Исполнитель</string>
+    <string name="smtpr_album">Альбом</string>
+</resources>
