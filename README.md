@@ -1,5 +1,7 @@
 # Simple File Properties
 A helper dialog for displaying file properties based on their type.
+# Deprecated
+Everything has been merged into https://github.com/SimpleMobileTools/Simple-Commons
 
 [ ![Download](https://api.bintray.com/packages/simplelibraries/fileproperties/fileproperties/images/download.svg) ](https://bintray.com/simplelibraries/fileproperties/fileproperties/_latestVersion)
 
